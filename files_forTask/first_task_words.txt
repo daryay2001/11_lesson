@@ -1,0 +1,4 @@
+1: everything
+2: temptation
+3: simplest
+4: satisfied
