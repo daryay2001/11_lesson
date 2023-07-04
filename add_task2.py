@@ -26,15 +26,15 @@ import os
 #     print(error)
 try:
     # direct = input((f"Enter path: ").strip())
-    direct = "/files_to_add_delete/"
+    direct = "files_to_add_delete/"
     if os.path.exists(direct):
         print("Path exist")
-    #     for file_name in os.listdir(direct): #Проверка наличия файлов в директории
+        for file_name in os.listdir(direct): #Проверка наличия файлов в директории
     #         # if file_name.startswith(input((f"Enter file name to delete: ").strip()):
-    #         if file_name.startswith("notes"):
-    #             file_path = os.path.join(direct, file_name)
-    #             os.remove(file_path)
-    #             print(f"File {file_name} was deleted")
+            if file_name.startswith("notes"):
+                file_path = os.path.join(direct, file_name)
+                os.remove(file_path)
+                print(f"File {file_name} was deleted")
     else:
         print("Such path is not exist!")
 
